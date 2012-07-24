@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+   
+        android:id="@+id/perioxi_select" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Area"
+         android:gravity="center_vertical|center_horizontal"
+         android:background="@drawable/text_selector"
+         android:paddingLeft="5dp"
+         android:paddingRight="5dp"
+         style="@style/FirstText"   
+         android:layout_weight="1"
+        >
+</TextView>

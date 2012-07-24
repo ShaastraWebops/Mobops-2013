@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/eventTitle"
+        style="@style/EventHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Robowars" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" >
+
+        <com.android.views.ReflectionLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp" >
+
+            <ImageView
+                android:id="@+id/event_image"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_bordered"
+                android:src="@drawable/robowars" >
+            </ImageView>
+        </com.android.views.ReflectionLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/event_image"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/prizeMoney"
+                style="@style/PrizeMoneyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/intro"
+            style="@style/TabButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Introduction" />
+
+        <Button
+            android:id="@+id/eventFormat"
+            style="@style/TabButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Event Format" />
+
+        <Button
+            android:id="@+id/venueAndMaps"
+            style="@style/TabButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Venue / Maps" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|left"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/button_bordered"
+        android:orientation="vertical" >
+
+
+        <ScrollView
+            android:id="@+id/vert2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="vertical" >
+
+            <android.widget.ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </android.widget.ViewFlipper>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

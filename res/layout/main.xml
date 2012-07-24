@@ -2,11 +2,83 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/background"
     android:orientation="vertical" >
 
-    <TextView
-        android:layout_width="fill_parent"
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/shaastra_logo" />
+
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:src="@drawable/line" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/vertical_secroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#00FFFFFF"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/events_button"
+                android:layout_width="150sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/custombutton"
+                android:text="EVENTS"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/coords_button"
+                android:layout_width="150sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4sp"
+                android:background="@drawable/custombutton"
+                android:text="CO-ORDS"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/hospi_button"
+                android:layout_width="150sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4sp"
+                android:background="@drawable/custombutton"
+                android:text="HOSPI"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/spons_button"
+                android:layout_width="150sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4sp"
+                android:background="@drawable/custombutton"
+                android:text="SPONSORS"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:typeface="sans" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

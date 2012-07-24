@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FirstText">
+        <item name="android:colorForeground">#f0f</item>
+        <item name="android:padding">2sp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#CC3300</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:colorBackground">#999</item>
+    </style>
+
+    <style name="headerText">
+        <item name="android:colorForeground">#f0f</item>
+        <item name="android:padding">2sp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingTop">4dip</item>
+        <item name="android:paddingLeft">4dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">25dip </item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="eventText" parent="android:Theme.Translucent">
+        <item name="android:colorForeground">#f0f</item>
+        <item name="android:padding">2sp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingLeft">1dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content </item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">#70000000</item>
+    </style>
+
+    <style name="headerText.mainmenu2">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="TabButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:background">@drawable/customtabbutton</item>
+    </style>
+
+    <style name="TextLabel">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="EventHeaderText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    
+    <style name="PrizeMoneyText">
+         <item name="android:text" >Prize Money: \nRs 75000</item>
+        <item name="android:textColor" >#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+</resources>
