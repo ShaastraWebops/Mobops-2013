@@ -1,6 +1,7 @@
 package com.android.shaastra;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -54,6 +55,9 @@ public class EventsInformation extends Activity
 		introductionText = "This is the introduction text\n If this works fine, then we can safely abstract this section of the code";
 		eventFormatText = "This is the event format text";
 		venueText = "This is the venue text";
+		
+		venueLat = 12.132412;
+		venueLong = 77.123512;
 		
 		//TODO : Obtain from database
 	}
@@ -112,12 +116,12 @@ public class EventsInformation extends Activity
 			public void onClick(View v)
 			{
 				Log.d("MAP INITIATE", "This initiates the map");
-				/*	
+				
 				Intent i = new Intent(EventsInformation.this, Maps.class);
 				i.putExtra("Latitude", venueLat);
 				i.putExtra("Longitude", venueLong);
 				startActivity(i);
-				*/
+				
 			}
 		});
 		/* Adding these to the flipper */
